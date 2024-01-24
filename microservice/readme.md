@@ -15,7 +15,7 @@ docker build -t recognizer .
 ```
 * Then run:
 ```
-docker run -d -p 8080:8080 micro
+docker run -d -p 8080:8080 recognizer
 ```
 * Wait till you see the message (or any other similar one):
 ```

@@ -1,0 +1,27 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "food_recognizer"
+description = "Food 101 recognizer"
+version = "1.0.0"
+readme = "readme.md"
+requires-python = ">=3.8"
+maintainers = [
+    {name = "Tekhin Vasiliy"}
+]
+dependencies = [
+    "numpy",
+    "opencv-python-headless",
+    "torchvision",
+    "torch",
+    "scikit-learn",
+]
+
+[tool.hatch.build]
+include = [
+  "food_recognizer/**/*.pth",
+  "food_recognizer/**/*.npy",
+  "food_recognizer/*.py"
+]

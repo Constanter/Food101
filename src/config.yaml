@@ -1,0 +1,24 @@
+model:
+  name: 'swin-s'
+  num_classes: 101
+
+train:
+  root_path: '/home/tekhin/data/food/dataset/food-101/'
+  # common size for resizing
+  img_size: 256
+  # common size for center crop
+  center_crop_size: 224
+  # name of loss function
+  loss_name: "dice_ce"
+  # number of epochs
+  epochs: 50
+  # initial LR
+  lr: 0.001
+  # name of the optimizer
+  optimizer: "AdamW"
+  # decay for optimizer
+  weight_decay: 0.01
+  batch_size: 64
+  seed: 42
+  mode: 'transfer'
+

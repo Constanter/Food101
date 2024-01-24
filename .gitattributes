@@ -1,0 +1,2 @@
+microservice/model.pth filter=lfs diff=lfs merge=lfs -text
+food_ml/food_recognizer/data/model.pth filter=lfs diff=lfs merge=lfs -text

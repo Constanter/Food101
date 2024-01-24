@@ -1,0 +1,1 @@
+from .food_recognizer import inference
